@@ -4,6 +4,9 @@
 # instead of editing this one. Cucumber will automatically load all features/**/*.rb
 # files.
 
+# Disable bootsnap to avoid Google Drive sync timeouts
+ENV['DISABLE_BOOTSNAP'] = '1'
+
 require 'cucumber/rails'
 
 # To avoid confusion on missed migrations - use Rails 4 checker to ensure
